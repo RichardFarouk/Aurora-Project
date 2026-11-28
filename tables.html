@@ -6,132 +6,276 @@
         <title>Time Table</title>
         <link rel="stylesheet" href="tables.css">
     </head>
-    <body>
-        <table border="1">
-            <tr>
-                <th>Time</th>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-            </tr>
+    <body>       
+        <div class="header">
+            <select>
+                <option>JSS 1</option>
+            </select>
 
-            <tr>
-                <td>7:30-8:00<br>
-                    <small>Fri 7:30-8:00</small>
-                </td>
-                <td colspan="5">Arrival and assembly</td>
-            </tr>
+            <select id="arm-select">
+                <option value="A">Class A</option>
+                <option value="B">Class B</option>
+            </select>
+            <strong id="title-change">JSS 1A  Weekly Timetable</strong>
+        </div>
 
-            <tr>
-                <td>8:00-9:00<br>
-                    <small>Fri 8:00-8:40</small>
-                </td>
-                <td rowspan="2">
-                    Mathematics<br>
-                    <small>Joint A + B &middot; double</small>
-                </td>
-                <td rowspan="2">English</td>
-                <td>English</td>
-                <td>Creative Arts</td>
-                <td>Mathematics</td>
-            </tr>
-
-            <tr>
-                <td>9:00-10:00<br>
-                    <small>Fri 8:40-9:20</small>
-                </td>
-                <td>Creative Arts</td>
-                <td>Basic Science</td>
-                <td>Creative Arts</td>
-            </tr>
-
-            <tr>
-                <td>7:30-8:00<br>
-                    <small>Fri 9:20-9:50</small>
-                </td>
-                <td colspan="5">Breakfast</td>
-            </tr>
-
-            <tr>
-                <td>10:30-11:30<br>
-                    <small>Fri 9:50-10:30</small>
-                </td>
-                <td>Basic Science</td>
-                <td>Creative Arts</td>
-                <td>Mathematics<br>
-                    <small>Joint A + B</small>
-                </td>
-                <td>English<br>
-                    <small>Joint A + B</small>
-                </td>
-                <td>Basic Science</td>
-            </tr>
-
-            <tr>
-                <td>11:30-12:30<br>
-                    <small>Fri 10:30-11:10</small>
-                </td>
-                <td>Social Studies</td>
-                <td>Basic Science</td>
-                <td>Basic Science</td>
-                <td>Social Studies</td>
-                <td>Social Studies</td>
-            </tr>
-
-            <tr>
-                <td>12:30-1:00<br>
-                    <small>Fri 11:10-11:40</small>
-                </td>
-                <td colspan="5">Lunch</td>
-            </tr>
-
-            <tr>
-                <td>1:00-2:00<br>
-                    <small>Fri 11:40-12:20</small>
-                </td>
-                <td>English</td>
-                <td>Social Studies</td>
-                <td>Social Studies</td>
-                <td>Mathematics</td>
-                <td>Basic Technology</td>
-            </tr>
-
-            <tr>
-                <td>2:00-3:00<br>
-                    <small>Fri 12:20-1:00</small>
-                </td>
-                <td>Basic Technology</td>
-                <td>Basic Technology</td>
-                <td>Basic Technology</td>
-                <td>Basic Technology</td>
-                <td>Civic Education</td>
-            </tr>
-
-            <tr>
-                <td>3:00-4:00<br>
-                    <small>Fri 1:00-1:40</small>
-                </td>
-                <td>Civic Education</td>
-                <td>Civic Education</td>
-                <td>Civic Education</td>
-                <td>Civic Education</td>
-                <td>Computer Studies</td>
-            </tr>
-
-            <tr>
-                <td>4:00-5:00<br>
-                    <small>Fri 1:40-2:20</small>
-                </td>
-                <td>Computer Studies</td>
-                <td>Computer Studies</td>
-                <td>Computer Studies</td>
-                <td>Computer Studies</td>
-                <td>Creative Arts</td>
-            </tr>
-
-        </table>
-
+        <div >
+            <div id="timetable-A">
+                <table border="1" class="timetable">
+                    <tr>
+                        <th>Time</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                    </tr>
+        
+                    <tr>
+                        <td>7:30-8:00<br>
+                            <small>Fri 7:30-8:00</small>
+                        </td>
+                        <td colspan="5">Arrival and assembly</td>
+                    </tr>
+        
+                    <tr>
+                        <td>8:00-9:00<br>
+                            <small>Fri 8:00-8:40</small>
+                        </td>
+                        <td class="math" rowspan="2">
+                            Mathematics<br>
+                            <small>Joint A + B &middot; double</small>
+                        </td>
+                        <td rowspan="2">English</td>
+                        <td>English</td>
+                        <td>Creative Arts</td>
+                        <td>Mathematics</td>
+                    </tr>
+        
+                    <tr>
+                        <td>9:00-10:00<br>
+                            <small>Fri 8:40-9:20</small>
+                        </td>
+                        <td>Creative Arts</td>
+                        <td>Basic Science</td>
+                        <td>Creative Arts</td>
+                    </tr>
+        
+                    <tr>
+                        <td>7:30-8:00<br>
+                            <small>Fri 9:20-9:50</small>
+                        </td>
+                        <td colspan="5" class="break">Breakfast</td>
+                    </tr>
+        
+                    <tr>
+                        <td>10:30-11:30<br>
+                            <small>Fri 9:50-10:30</small>
+                        </td>
+                        <td>Basic Science</td>
+                        <td>Creative Arts</td>
+                        <td>Mathematics<br>
+                            <small>Joint A + B</small>
+                        </td>
+                        <td>English<br>
+                            <small>Joint A + B</small>
+                        </td>
+                        <td>Basic Science</td>
+                    </tr>
+        
+                    <tr>
+                        <td>11:30-12:30<br>
+                            <small>Fri 10:30-11:10</small>
+                        </td>
+                        <td>Social Studies</td>
+                        <td>Basic Science</td>
+                        <td>Basic Science</td>
+                        <td>Social Studies</td>
+                        <td>Social Studies</td>
+                    </tr>
+        
+                    <tr>
+                        <td>12:30-1:00<br>
+                            <small>Fri 11:10-11:40</small>
+                        </td>
+                        <td colspan="5">Lunch</td>
+                    </tr>
+        
+                    <tr>
+                        <td>1:00-2:00<br>
+                            <small>Fri 11:40-12:20</small>
+                        </td>
+                        <td>English</td>
+                        <td>Social Studies</td>
+                        <td>Social Studies</td>
+                        <td>Mathematics</td>
+                        <td>Basic Technology</td>
+                    </tr>
+        
+                    <tr>
+                        <td>2:00-3:00<br>
+                            <small>Fri 12:20-1:00</small>
+                        </td>
+                        <td>Basic Technology</td>
+                        <td>Basic Technology</td>
+                        <td>Basic Technology</td>
+                        <td>Basic Technology</td>
+                        <td>Civic Education</td>
+                    </tr>
+        
+                    <tr>
+                        <td>3:00-4:00<br>
+                            <small>Fri 1:00-1:40</small>
+                        </td>
+                        <td>Civic Education</td>
+                        <td>Civic Education</td>
+                        <td>Civic Education</td>
+                        <td>Civic Education</td>
+                        <td>Computer Studies</td>
+                    </tr>
+        
+                    <tr>
+                        <td>4:00-5:00<br>
+                            <small>Fri 1:40-2:20</small>
+                        </td>
+                        <td>Computer Studies</td>
+                        <td>Computer Studies</td>
+                        <td>Computer Studies</td>
+                        <td>Computer Studies</td>
+                        <td>Creative Arts</td>
+                    </tr>
+        
+                </table>
+            </div>
+    
+            <div id="timetable-B">
+                <table border="1" class="timetable">
+                    <tr>
+                        <th>Time</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                    </tr>
+        
+                    <tr>
+                        <td>7:30-8:00<br>
+                            <small>Fri 7:30-8:00</small>
+                        </td>
+                        <td colspan="5">Arrival and assembly</td>
+                    </tr>
+        
+                    <tr>
+                        <td>8:00-9:00<br>
+                            <small>Fri 8:00-8:40</small>
+                        </td>
+                        <td rowspan="2">
+                            Mathematics<br>
+                            <small>Joint A + B &middot; double</small>
+                        </td>
+                        <td rowspan="2">English</td>
+                        <td>English</td>
+                        <td>Basic Technology</td>
+                        <td>Mathematics</td>
+                    </tr>
+        
+                    <tr>
+                        <td>9:00-10:00<br>
+                            <small>Fri 8:40-9:20</small>
+                        </td>
+                        <td>Basic Technology</td>
+                        <td>Civic Education</td>
+                        <td>Basic Technology</td>
+                    </tr>
+        
+                    <tr>
+                        <td>7:30-8:00<br>
+                            <small>Fri 9:20-9:50</small>
+                        </td>
+                        <td colspan="5">Breakfast</td>
+                    </tr>
+        
+                    <tr>
+                        <td>10:30-11:30<br>
+                            <small>Fri 9:50-10:30</small>
+                        </td>
+                        <td>Civic Education</td>
+                        <td>Basic Technology</td>
+                        <td>Mathematics<br>
+                            <small>Joint A + B</small>
+                        </td>
+                        <td>English<br>
+                            <small>Joint A + B</small>
+                        </td>
+                        <td>Civic Education</td>
+                    </tr>
+        
+                    <tr>
+                        <td>11:30-12:30<br>
+                            <small>Fri 10:30-11:10</small>
+                        </td>
+                        <td>Computer Studies</td>
+                        <td>Civic Education</td>
+                        <td>Civic Education</td>
+                        <td>Computer Studies</td>
+                        <td>Computer Studies</td>
+                    </tr>
+        
+                    <tr>
+                        <td>12:30-1:00<br>
+                            <small>Fri 11:10-11:40</small>
+                        </td>
+                        <td colspan="5">Lunch</td>
+                    </tr>
+        
+                    <tr>
+                        <td>1:00-2:00<br>
+                            <small>Fri 11:40-12:20</small>
+                        </td>
+                        <td>English</td>
+                        <td>Computer Studies</td>
+                        <td>Computer Studies</td>
+                        <td>Mathematics</td>
+                        <td>Creative Arts</td>
+                    </tr>
+        
+                    <tr>
+                        <td>2:00-3:00<br>
+                            <small>Fri 12:20-1:00</small>
+                        </td>
+                        <td>Creative Arts</td>
+                        <td>Creative Arts</td>
+                        <td>Creative Arts</td>
+                        <td>Creative Arts</td>
+                        <td>Basic Science</td>
+                    </tr>
+        
+                    <tr>
+                        <td>3:00-4:00<br>
+                            <small>Fri 1:00-1:40</small>
+                        </td>
+                        <td>Basic Science</td>
+                        <td>Basic Science</td>
+                        <td>Basic Science</td>
+                        <td>Basic Science</td>
+                        <td>Social Studies</td>
+                    </tr>
+        
+                    <tr>
+                        <td>4:00-5:00<br>
+                            <small>Fri 1:40-2:20</small>
+                        </td>
+                        <td>Social Studies</td>
+                        <td>Social Studies</td>
+                        <td>Social Studies</td>
+                        <td>Social Studies</td>
+                        <td>Basic Technology</td>
+                    </tr>
+        
+                </table>
+            </div>
+        </div>
+        <script src="tables.js"></script>
     </body>
 </html>
