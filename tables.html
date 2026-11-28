@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTH-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Time Table</title>
         <link rel="stylesheet" href="tables.css">
@@ -32,28 +32,28 @@
                     </tr>
         
                     <tr>
-                        <td>7:30-8:00<br>
+                        <td class="time">7:30-8:00<br>
                             <small>Fri 7:30-8:00</small>
                         </td>
-                        <td colspan="5">Arrival and assembly</td>
+                        <td colspan="5" class="break">Arrival and assembly</td>
                     </tr>
         
                     <tr>
-                        <td>8:00-9:00<br>
+                        <td class="time">8:00-9:00<br>
                             <small>Fri 8:00-8:40</small>
                         </td>
                         <td class="math" rowspan="2">
                             Mathematics<br>
                             <small>Joint A + B &middot; double</small>
                         </td>
-                        <td rowspan="2">English</td>
-                        <td>English</td>
+                        <td rowspan="2" class="english">English</td>
+                        <td class="english">English</td>
                         <td>Creative Arts</td>
-                        <td>Mathematics</td>
+                        <td class="math">Mathematics</td>
                     </tr>
         
                     <tr>
-                        <td>9:00-10:00<br>
+                        <td class="time">9:00-10:00<br>
                             <small>Fri 8:40-9:20</small>
                         </td>
                         <td>Creative Arts</td>
@@ -62,29 +62,29 @@
                     </tr>
         
                     <tr>
-                        <td>7:30-8:00<br>
+                        <td class="time">7:30-8:00<br>
                             <small>Fri 9:20-9:50</small>
                         </td>
                         <td colspan="5" class="break">Breakfast</td>
                     </tr>
         
                     <tr>
-                        <td>10:30-11:30<br>
+                        <td class="time">10:30-11:30<br>
                             <small>Fri 9:50-10:30</small>
                         </td>
                         <td>Basic Science</td>
                         <td>Creative Arts</td>
-                        <td>Mathematics<br>
+                        <td class="math">Mathematics<br>
                             <small>Joint A + B</small>
                         </td>
-                        <td>English<br>
+                        <td class="english">English<br>
                             <small>Joint A + B</small>
                         </td>
                         <td>Basic Science</td>
                     </tr>
         
                     <tr>
-                        <td>11:30-12:30<br>
+                        <td class="time">11:30-12:30<br>
                             <small>Fri 10:30-11:10</small>
                         </td>
                         <td>Social Studies</td>
@@ -95,25 +95,29 @@
                     </tr>
         
                     <tr>
-                        <td>12:30-1:00<br>
+                        <td class="time">12:30-1:00<br>
                             <small>Fri 11:10-11:40</small>
                         </td>
-                        <td colspan="5">Lunch</td>
+                        <td colspan="5" class="break">Lunch</td>
                     </tr>
         
                     <tr>
-                        <td>1:00-2:00<br>
+                        <td class="time">1:00-2:00<br>
                             <small>Fri 11:40-12:20</small>
                         </td>
-                        <td>English</td>
+                        <td class="english">English<br>
+                            <small>Joint A + B</small>
+                        </td>
                         <td>Social Studies</td>
                         <td>Social Studies</td>
-                        <td>Mathematics</td>
+                        <td class="math">Mathematics<br>
+                            <small>Joint A + B</small>
+                        </td>
                         <td>Basic Technology</td>
                     </tr>
         
                     <tr>
-                        <td>2:00-3:00<br>
+                        <td class="time">2:00-3:00<br>
                             <small>Fri 12:20-1:00</small>
                         </td>
                         <td>Basic Technology</td>
@@ -124,7 +128,7 @@
                     </tr>
         
                     <tr>
-                        <td>3:00-4:00<br>
+                        <td class="time">3:00-4:00<br>
                             <small>Fri 1:00-1:40</small>
                         </td>
                         <td>Civic Education</td>
@@ -135,7 +139,7 @@
                     </tr>
         
                     <tr>
-                        <td>4:00-5:00<br>
+                        <td class="time">4:00-5:00<br>
                             <small>Fri 1:40-2:20</small>
                         </td>
                         <td>Computer Studies</td>
@@ -160,28 +164,28 @@
                     </tr>
         
                     <tr>
-                        <td>7:30-8:00<br>
+                        <td class="time">7:30-8:00<br>
                             <small>Fri 7:30-8:00</small>
                         </td>
-                        <td colspan="5">Arrival and assembly</td>
+                        <td colspan="5" class="break">Arrival and assembly</td>
                     </tr>
         
                     <tr>
-                        <td>8:00-9:00<br>
+                        <td class="time">8:00-9:00<br>
                             <small>Fri 8:00-8:40</small>
                         </td>
-                        <td rowspan="2">
+                        <td rowspan="2" class="math">
                             Mathematics<br>
                             <small>Joint A + B &middot; double</small>
                         </td>
-                        <td rowspan="2">English</td>
-                        <td>English</td>
+                        <td rowspan="2" class="english">English</td>
+                        <td class="english">English</td>
                         <td>Basic Technology</td>
-                        <td>Mathematics</td>
+                        <td class="math">Mathematics</td>
                     </tr>
         
                     <tr>
-                        <td>9:00-10:00<br>
+                        <td class="time">9:00-10:00<br>
                             <small>Fri 8:40-9:20</small>
                         </td>
                         <td>Basic Technology</td>
@@ -190,29 +194,29 @@
                     </tr>
         
                     <tr>
-                        <td>7:30-8:00<br>
+                        <td class="time">7:30-8:00<br>
                             <small>Fri 9:20-9:50</small>
                         </td>
-                        <td colspan="5">Breakfast</td>
+                        <td colspan="5" class="break">Breakfast</td>
                     </tr>
         
                     <tr>
-                        <td>10:30-11:30<br>
+                        <td class="time">10:30-11:30<br>
                             <small>Fri 9:50-10:30</small>
                         </td>
                         <td>Civic Education</td>
                         <td>Basic Technology</td>
-                        <td>Mathematics<br>
+                        <td class="math">Mathematics<br>
                             <small>Joint A + B</small>
                         </td>
-                        <td>English<br>
+                        <td class="english">English<br>
                             <small>Joint A + B</small>
                         </td>
                         <td>Civic Education</td>
                     </tr>
         
                     <tr>
-                        <td>11:30-12:30<br>
+                        <td class="time">11:30-12:30<br>
                             <small>Fri 10:30-11:10</small>
                         </td>
                         <td>Computer Studies</td>
@@ -223,25 +227,29 @@
                     </tr>
         
                     <tr>
-                        <td>12:30-1:00<br>
+                        <td class="time">12:30-1:00<br>
                             <small>Fri 11:10-11:40</small>
                         </td>
-                        <td colspan="5">Lunch</td>
+                        <td colspan="5" class="break">Lunch</td>
                     </tr>
         
                     <tr>
-                        <td>1:00-2:00<br>
+                        <td class="time">1:00-2:00<br>
                             <small>Fri 11:40-12:20</small>
                         </td>
-                        <td>English</td>
+                        <td class="english">English<br>
+                            <small>Joint A + B</small>
+                        </td>
                         <td>Computer Studies</td>
                         <td>Computer Studies</td>
-                        <td>Mathematics</td>
+                        <td class="math">Mathematics<br>
+                            <small>Joint A + B</small>
+                        </td>
                         <td>Creative Arts</td>
                     </tr>
         
                     <tr>
-                        <td>2:00-3:00<br>
+                        <td class="time">2:00-3:00<br>
                             <small>Fri 12:20-1:00</small>
                         </td>
                         <td>Creative Arts</td>
@@ -252,7 +260,7 @@
                     </tr>
         
                     <tr>
-                        <td>3:00-4:00<br>
+                        <td class="time">3:00-4:00<br>
                             <small>Fri 1:00-1:40</small>
                         </td>
                         <td>Basic Science</td>
@@ -263,7 +271,7 @@
                     </tr>
         
                     <tr>
-                        <td>4:00-5:00<br>
+                        <td class="time">4:00-5:00<br>
                             <small>Fri 1:40-2:20</small>
                         </td>
                         <td>Social Studies</td>

@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 select {
@@ -21,13 +22,68 @@ strong {
     font-size: 18px;
 }
 
-td {
-    text-align: center;
-}
 
 td small {
     display: block;
     font-size: 12px;
     color: #555;
     margin-top: 4px;
+}
+
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #222;
+}
+
+.timetable th,
+.timetable td {
+    border: 1px solid #ccc;
+    padding: 10px 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.timetable th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+    height: 40px;
+}
+
+.timetable .time {
+    text-align: left;
+    white-space: nowrap;
+    font-weight: bold;
+    width: 115px;
+}
+
+.timetable small {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    color: #555;
+    margin-top: 4px;
+}
+
+
+.timetable .math {
+    background-color: #cfe2f8;
+    color: #24558b;
+}
+
+
+.timetable .english {
+    background-color: #dedafa;
+    color: #5141a5;
+}
+
+
+.timetable .break {
+    background-color: #f1f1f1;
+    color: #666;
+    font-weight: 600;
+    height: 32px;
 }
